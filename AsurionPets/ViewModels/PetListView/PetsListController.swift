@@ -17,16 +17,49 @@ class PetListController: UIViewController, UITableViewDataSource, UITableViewDel
     @IBOutlet weak var viewOfficialHours: UIView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
-    var petArray = [Pet]()
+    var settings: Settings? = nil
+    var pets = [Pet]()
+    
+    let client = HttpClient(
+        baseURL: URL(string: "https://asurion.herokuapp.com")!   // Set custom base URL.
+    )
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        indicator.isHidden = true
+        
+        getSettings()
+        getPets()
+    }
+    
+    // MARK: - Load data(Settings, Pets) from server
+    func getSettings() -> Void {
+        client.fetch(API.getSettings()) { (result) in
+            switch result {
+            case .success(let resSettings, let response):
+                self.settings = resSettings
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func getPets() -> Void {
+        client.fetch(API.Pets.all()) { (result) in
+            switch result {
+            case .success(let resPets, let response):
+                self.pets = resPets
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
+    // MARK: - Table View delegates
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return petArray.count
+        return pets.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -36,7 +69,7 @@ class PetListController: UIViewController, UITableViewDataSource, UITableViewDel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PetTableViewCell") as! PetTableViewCell
         
-        let petData = petArray[indexPath.row]
+        let petData = pets[indexPath.row]
         
         cell.imgView.downloaded(from: petData.image_url)
         cell.txtLabel.text = petData.title
