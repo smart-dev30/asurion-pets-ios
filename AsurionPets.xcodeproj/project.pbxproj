@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		661999FB252B42160028585D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661999FA252B42160028585D /* AppDelegate.swift */; };
+		661999FD252B42160028585D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661999FC252B42160028585D /* SceneDelegate.swift */; };
+		661999FF252B42160028585D /* PetsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661999FE252B42160028585D /* PetsListController.swift */; };
+		66199A02252B42160028585D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66199A00252B42160028585D /* Main.storyboard */; };
+		66199A04252B42190028585D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66199A03252B42190028585D /* Assets.xcassets */; };
+		66199A07252B42190028585D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66199A05252B42190028585D /* LaunchScreen.storyboard */; };
+		66199A12252B42190028585D /* AsurionPetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66199A11252B42190028585D /* AsurionPetsTests.swift */; };
+		66199A1D252B42190028585D /* AsurionPetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66199A1C252B42190028585D /* AsurionPetsUITests.swift */; };
+		66199A35252B59490028585D /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66199A33252B59490028585D /* Pet.swift */; };
+		66199A37252B59B00028585D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66199A36252B59B00028585D /* Settings.swift */; };
+		66199A3A252B5A480028585D /* PetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66199A39252B5A480028585D /* PetTableViewCell.swift */; };
+		66199A3E252B5AE40028585D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66199A3C252B5AE40028585D /* View.swift */; };
+		66199A3F252B5AE40028585D /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66199A3D252B5AE40028585D /* UIImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66199A0E252B42190028585D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 661999EF252B42160028585D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661999F6252B42160028585D;
+			remoteInfo = AsurionPets;
+		};
+		66199A19252B42190028585D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 661999EF252B42160028585D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661999F6252B42160028585D;
+			remoteInfo = AsurionPets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		661999F7252B42160028585D /* AsurionPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsurionPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		661999FA252B42160028585D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		661999FC252B42160028585D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
+		661999FE252B42160028585D /* PetsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsListController.swift; sourceTree = "<group>"; };
+		66199A01252B42160028585D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66199A03252B42190028585D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66199A06252B42190028585D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66199A08252B42190028585D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		66199A0D252B42190028585D /* AsurionPetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsurionPetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66199A11252B42190028585D /* AsurionPetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsurionPetsTests.swift; sourceTree = "<group>"; };
+		66199A13252B42190028585D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66199A18252B42190028585D /* AsurionPetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsurionPetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66199A1C252B42190028585D /* AsurionPetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsurionPetsUITests.swift; sourceTree = "<group>"; };
+		66199A1E252B42190028585D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66199A33252B59490028585D /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		66199A36252B59B00028585D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		66199A39252B5A480028585D /* PetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTableViewCell.swift; sourceTree = "<group>"; };
+		66199A3C252B5AE40028585D /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View.swift; path = ../View.swift; sourceTree = "<group>"; };
+		66199A3D252B5AE40028585D /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = ../UIImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		661999F4252B42160028585D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66199A0A252B42190028585D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66199A15252B42190028585D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		661999EE252B42160028585D = {
+			isa = PBXGroup;
+			children = (
+				661999F9252B42160028585D /* AsurionPets */,
+				66199A10252B42190028585D /* AsurionPetsTests */,
+				66199A1B252B42190028585D /* AsurionPetsUITests */,
+				661999F8252B42160028585D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		661999F8252B42160028585D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				661999F7252B42160028585D /* AsurionPets.app */,
+				66199A0D252B42190028585D /* AsurionPetsTests.xctest */,
+				66199A18252B42190028585D /* AsurionPetsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		661999F9252B42160028585D /* AsurionPets */ = {
+			isa = PBXGroup;
+			children = (
+				66199A41252B646C0028585D /* Services */,
+				66199A2C252B51D00028585D /* Application */,
+				66199A31252B59490028585D /* Models */,
+				66199A2E252B53740028585D /* Resources */,
+				66199A2B252B519B0028585D /* Storyboards */,
+				66199A2D252B534C0028585D /* ViewModels */,
+				66199A3B252B5AE40028585D /* Views */,
+			);
+			path = AsurionPets;
+			sourceTree = "<group>";
+		};
+		66199A10252B42190028585D /* AsurionPetsTests */ = {
+			isa = PBXGroup;
+			children = (
+				66199A11252B42190028585D /* AsurionPetsTests.swift */,
+				66199A13252B42190028585D /* Info.plist */,
+			);
+			path = AsurionPetsTests;
+			sourceTree = "<group>";
+		};
+		66199A1B252B42190028585D /* AsurionPetsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66199A1C252B42190028585D /* AsurionPetsUITests.swift */,
+				66199A1E252B42190028585D /* Info.plist */,
+			);
+			path = AsurionPetsUITests;
+			sourceTree = "<group>";
+		};
+		66199A2B252B519B0028585D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				66199A00252B42160028585D /* Main.storyboard */,
+				66199A05252B42190028585D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		66199A2C252B51D00028585D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				661999FA252B42160028585D /* AppDelegate.swift */,
+				661999FC252B42160028585D /* SceneDelegate.swift */,
+				66199A08252B42190028585D /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		66199A2D252B534C0028585D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				66199A38252B5A2D0028585D /* PetListView */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		66199A2E252B53740028585D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66199A03252B42190028585D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		66199A31252B59490028585D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66199A33252B59490028585D /* Pet.swift */,
+				66199A36252B59B00028585D /* Settings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		66199A38252B5A2D0028585D /* PetListView */ = {
+			isa = PBXGroup;
+			children = (
+				661999FE252B42160028585D /* PetsListController.swift */,
+				66199A39252B5A480028585D /* PetTableViewCell.swift */,
+			);
+			path = PetListView;
+			sourceTree = "<group>";
+		};
+		66199A3B252B5AE40028585D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66199A40252B5B2D0028585D /* Extensions */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66199A40252B5B2D0028585D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				66199A3C252B5AE40028585D /* View.swift */,
+				66199A3D252B5AE40028585D /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		66199A41252B646C0028585D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				66199A42252B647B0028585D /* HttpClient */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		66199A42252B647B0028585D /* HttpClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HttpClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		661999F6252B42160028585D /* AsurionPets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66199A21252B42190028585D /* Build configuration list for PBXNativeTarget "AsurionPets" */;
+			buildPhases = (
+				661999F3252B42160028585D /* Sources */,
+				661999F4252B42160028585D /* Frameworks */,
+				661999F5252B42160028585D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsurionPets;
+			productName = AsurionPets;
+			productReference = 661999F7252B42160028585D /* AsurionPets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66199A0C252B42190028585D /* AsurionPetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66199A24252B42190028585D /* Build configuration list for PBXNativeTarget "AsurionPetsTests" */;
+			buildPhases = (
+				66199A09252B42190028585D /* Sources */,
+				66199A0A252B42190028585D /* Frameworks */,
+				66199A0B252B42190028585D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66199A0F252B42190028585D /* PBXTargetDependency */,
+			);
+			name = AsurionPetsTests;
+			productName = AsurionPetsTests;
+			productReference = 66199A0D252B42190028585D /* AsurionPetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66199A17252B42190028585D /* AsurionPetsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66199A27252B42190028585D /* Build configuration list for PBXNativeTarget "AsurionPetsUITests" */;
+			buildPhases = (
+				66199A14252B42190028585D /* Sources */,
+				66199A15252B42190028585D /* Frameworks */,
+				66199A16252B42190028585D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66199A1A252B42190028585D /* PBXTargetDependency */,
+			);
+			name = AsurionPetsUITests;
+			productName = AsurionPetsUITests;
+			productReference = 66199A18252B42190028585D /* AsurionPetsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		661999EF252B42160028585D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Akio;
+				TargetAttributes = {
+					661999F6252B42160028585D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					66199A0C252B42190028585D = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 661999F6252B42160028585D;
+					};
+					66199A17252B42190028585D = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 661999F6252B42160028585D;
+					};
+				};
+			};
+			buildConfigurationList = 661999F2252B42160028585D /* Build configuration list for PBXProject "AsurionPets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 661999EE252B42160028585D;
+			productRefGroup = 661999F8252B42160028585D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				661999F6252B42160028585D /* AsurionPets */,
+				66199A0C252B42190028585D /* AsurionPetsTests */,
+				66199A17252B42190028585D /* AsurionPetsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		661999F5252B42160028585D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66199A07252B42190028585D /* LaunchScreen.storyboard in Resources */,
+				66199A04252B42190028585D /* Assets.xcassets in Resources */,
+				66199A02252B42160028585D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66199A0B252B42190028585D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66199A16252B42190028585D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		661999F3252B42160028585D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66199A3F252B5AE40028585D /* UIImageView.swift in Sources */,
+				66199A35252B59490028585D /* Pet.swift in Sources */,
+				66199A3A252B5A480028585D /* PetTableViewCell.swift in Sources */,
+				661999FF252B42160028585D /* PetsListController.swift in Sources */,
+				661999FB252B42160028585D /* AppDelegate.swift in Sources */,
+				661999FD252B42160028585D /* SceneDelegate.swift in Sources */,
+				66199A3E252B5AE40028585D /* View.swift in Sources */,
+				66199A37252B59B00028585D /* Settings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66199A09252B42190028585D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66199A12252B42190028585D /* AsurionPetsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66199A14252B42190028585D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66199A1D252B42190028585D /* AsurionPetsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66199A0F252B42190028585D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661999F6252B42160028585D /* AsurionPets */;
+			targetProxy = 66199A0E252B42190028585D /* PBXContainerItemProxy */;
+		};
+		66199A1A252B42190028585D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661999F6252B42160028585D /* AsurionPets */;
+			targetProxy = 66199A19252B42190028585D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66199A00252B42160028585D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66199A01252B42160028585D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66199A05252B42190028585D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66199A06252B42190028585D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66199A1F252B42190028585D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66199A20252B42190028585D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66199A22252B42190028585D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AsurionPets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdev.AsurionPets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66199A23252B42190028585D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AsurionPets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdev.AsurionPets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66199A25252B42190028585D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AsurionPetsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdev.AsurionPetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsurionPets.app/AsurionPets";
+			};
+			name = Debug;
+		};
+		66199A26252B42190028585D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AsurionPetsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdev.AsurionPetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsurionPets.app/AsurionPets";
+			};
+			name = Release;
+		};
+		66199A28252B42190028585D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AsurionPetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdev.AsurionPetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AsurionPets;
+			};
+			name = Debug;
+		};
+		66199A29252B42190028585D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AsurionPetsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartdev.AsurionPetsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AsurionPets;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		661999F2252B42160028585D /* Build configuration list for PBXProject "AsurionPets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66199A1F252B42190028585D /* Debug */,
+				66199A20252B42190028585D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66199A21252B42190028585D /* Build configuration list for PBXNativeTarget "AsurionPets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66199A22252B42190028585D /* Debug */,
+				66199A23252B42190028585D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66199A24252B42190028585D /* Build configuration list for PBXNativeTarget "AsurionPetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66199A25252B42190028585D /* Debug */,
+				66199A26252B42190028585D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66199A27252B42190028585D /* Build configuration list for PBXNativeTarget "AsurionPetsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66199A28252B42190028585D /* Debug */,
+				66199A29252B42190028585D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 661999EF252B42160028585D /* Project object */;
+}
