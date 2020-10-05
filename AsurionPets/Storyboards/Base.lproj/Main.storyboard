@@ -73,21 +73,21 @@
                                 <rect key="frame" x="0.0" y="225.5" width="414" height="670.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PetTableViewCell" id="qAI-vh-rJU" customClass="PetTableViewCell" customModule="AsurionPets" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PetTableViewCell" rowHeight="80" id="qAI-vh-rJU" customClass="PetTableViewCell" customModule="AsurionPets" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qAI-vh-rJU" id="FTo-86-HGD">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCi-Kq-cQv">
-                                                    <rect key="frame" x="75.5" y="11" width="338.5" height="21.5"/>
+                                                    <rect key="frame" x="112" y="29.5" width="302" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pet" translatesAutoresizingMaskIntoConstraints="NO" id="dmf-oL-dUb">
-                                                    <rect key="frame" x="20" y="4" width="35.5" height="35.5"/>
+                                                    <rect key="frame" x="20" y="4" width="72" height="72"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="3PJ-dl-vX4"/>
                                                         <constraint firstAttribute="width" secondItem="dmf-oL-dUb" secondAttribute="height" id="vNV-6X-c8v"/>
@@ -142,6 +142,7 @@
                         <outlet property="buttonChat" destination="hNa-se-nrH" id="kKm-Yk-ZiS"/>
                         <outlet property="buttonStacks" destination="Ygd-8K-Hz6" id="1Kj-gK-eP4"/>
                         <outlet property="indicator" destination="qIM-mQ-C9w" id="z65-7T-oQl"/>
+                        <outlet property="petList" destination="KtG-nK-BVt" id="FaB-jo-3xr"/>
                         <outlet property="textOfficialHours" destination="scw-tl-thK" id="A5c-xk-hBO"/>
                         <outlet property="viewOfficialHours" destination="dgb-ZP-ee4" id="eKc-tR-cyP"/>
                     </connections>
