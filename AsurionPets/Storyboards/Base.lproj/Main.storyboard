@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WDJ-CA-6hW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -7,7 +7,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pet List Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="tw9-C2-7xd">
+            <objects>
+                <navigationController id="WDJ-CA-6hW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dHe-Zt-c2d">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nnt-bL-2Fh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rw-jq-4FT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-797" y="112"/>
+        </scene>
+        <!--Pets-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PetListController" customModule="AsurionPets" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ygd-8K-Hz6">
-                                <rect key="frame" x="20" y="64" width="374" height="70"/>
+                                <rect key="frame" x="20" y="108" width="374" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNa-se-nrH">
                                         <rect key="frame" x="0.0" y="0.0" width="177" height="70"/>
@@ -27,6 +43,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="Chat">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -42,6 +61,9 @@
                                         <state key="normal" title="Call">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -52,7 +74,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-ZP-ee4">
-                                <rect key="frame" x="20" y="154" width="374" height="51.5"/>
+                                <rect key="frame" x="20" y="198" width="374" height="51.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scw-tl-thK">
                                         <rect key="frame" x="0.0" y="15" width="374" height="21.5"/>
@@ -70,7 +92,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KtG-nK-BVt">
-                                <rect key="frame" x="0.0" y="225.5" width="414" height="670.5"/>
+                                <rect key="frame" x="0.0" y="269.5" width="414" height="626.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PetTableViewCell" rowHeight="80" id="qAI-vh-rJU" customClass="PetTableViewCell" customModule="AsurionPets" customModuleProvider="target">
@@ -89,7 +111,6 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pet" translatesAutoresizingMaskIntoConstraints="NO" id="dmf-oL-dUb">
                                                     <rect key="frame" x="20" y="4" width="72" height="72"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="80" id="3PJ-dl-vX4"/>
                                                         <constraint firstAttribute="width" secondItem="dmf-oL-dUb" secondAttribute="height" id="vNV-6X-c8v"/>
                                                     </constraints>
                                                 </imageView>
@@ -117,7 +138,7 @@
                                 </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="qIM-mQ-C9w">
-                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                                <rect key="frame" x="188.5" y="456.5" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -137,19 +158,59 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3NT-SQ-PWm"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Pets" id="eQJ-pM-WER"/>
                     <connections>
                         <outlet property="buttonCall" destination="YtA-ZR-l84" id="bcM-81-fQ7"/>
                         <outlet property="buttonChat" destination="hNa-se-nrH" id="kKm-Yk-ZiS"/>
-                        <outlet property="buttonStacks" destination="Ygd-8K-Hz6" id="1Kj-gK-eP4"/>
                         <outlet property="indicator" destination="qIM-mQ-C9w" id="z65-7T-oQl"/>
                         <outlet property="petList" destination="KtG-nK-BVt" id="FaB-jo-3xr"/>
                         <outlet property="textOfficialHours" destination="scw-tl-thK" id="A5c-xk-hBO"/>
                         <outlet property="viewOfficialHours" destination="dgb-ZP-ee4" id="eKc-tR-cyP"/>
+                        <segue destination="745-7p-CSc" kind="showDetail" identifier="Pets2Detail" id="P8i-LE-X28"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="112"/>
+        </scene>
+        <!--Pet Detail View Controller-->
+        <scene sceneID="xe3-WI-lie">
+            <objects>
+                <viewController id="745-7p-CSc" customClass="PetDetailViewController" customModule="AsurionPets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qot-i1-p5q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2t-5b-Hi1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Hec-w0-bjX">
+                                <rect key="frame" x="197" y="394" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Hec-w0-bjX" firstAttribute="centerX" secondItem="CJl-Eu-6yv" secondAttribute="centerX" id="0Dj-dA-fhy"/>
+                            <constraint firstItem="V2t-5b-Hi1" firstAttribute="top" secondItem="Qot-i1-p5q" secondAttribute="top" id="BrN-gH-fOU"/>
+                            <constraint firstItem="Hec-w0-bjX" firstAttribute="centerY" secondItem="CJl-Eu-6yv" secondAttribute="centerY" id="Hef-wQ-jew"/>
+                            <constraint firstItem="V2t-5b-Hi1" firstAttribute="leading" secondItem="Qot-i1-p5q" secondAttribute="leading" id="i8z-LQ-gXi"/>
+                            <constraint firstAttribute="trailing" secondItem="V2t-5b-Hi1" secondAttribute="trailing" id="nLa-c0-fNn"/>
+                            <constraint firstItem="V2t-5b-Hi1" firstAttribute="bottom" secondItem="Qot-i1-p5q" secondAttribute="bottom" id="w1u-sH-02Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CJl-Eu-6yv"/>
+                    </view>
+                    <connections>
+                        <outlet property="loader" destination="Hec-w0-bjX" id="rb0-TX-UOb"/>
+                        <outlet property="webView" destination="V2t-5b-Hi1" id="RVe-ym-RGb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oS-1h-Mxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="112"/>
         </scene>
     </scenes>
     <resources>

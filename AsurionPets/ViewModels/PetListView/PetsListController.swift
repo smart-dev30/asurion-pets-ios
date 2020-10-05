@@ -9,24 +9,26 @@
 import UIKit
 
 class PetListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+
     @IBOutlet weak var petList: UITableView!
 
     @IBOutlet weak var buttonChat: UIButton!
     @IBOutlet weak var buttonCall: UIButton!
-    @IBOutlet weak var buttonStacks: UIStackView!
 
     @IBOutlet weak var textOfficialHours: UILabel!
     @IBOutlet weak var viewOfficialHours: UIView!
 
     @IBOutlet weak var indicator: UIActivityIndicatorView!
 
+
     var pets = [Pet]()
+    var petDetail: Pet? = nil
     
     let client = HttpClient(
         baseURL: URL(string: "https://asurion.herokuapp.com")!
     )
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -34,10 +36,18 @@ class PetListController: UIViewController, UITableViewDataSource, UITableViewDel
         // Check UI updates
         indicator.startAnimating()
         updateSettings(nil)
+        petList.canCancelContentTouches = false
         
         // Invoke load settings and pets from heroku server
         getSettings()
         getPets()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "Pets2Detail") {
+            let vc = segue.destination as! PetDetailViewController
+            vc.pet = petDetail
+        }
     }
     
     // MARK: - UI updates
@@ -111,5 +121,10 @@ class PetListController: UIViewController, UITableViewDataSource, UITableViewDel
 
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        petDetail = pets[indexPath.row]
+        
+        self.performSegue(withIdentifier: "Pets2Detail", sender: self)
+    }
 }
-
