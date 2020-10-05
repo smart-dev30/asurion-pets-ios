@@ -24,6 +24,8 @@ class PetListController: UIViewController, UITableViewDataSource, UITableViewDel
     var pets = [Pet]()
     var petDetail: Pet? = nil
     
+    var dateValidator: DateValidator? = nil
+    
     let client = HttpClient(
         baseURL: URL(string: "https://asurion.herokuapp.com")!
     )
@@ -34,9 +36,10 @@ class PetListController: UIViewController, UITableViewDataSource, UITableViewDel
         // Do any additional setup after loading the view.
         
         // Check UI updates
+        petList.canCancelContentTouches = false
+
         indicator.startAnimating()
         updateSettings(nil)
-        petList.canCancelContentTouches = false
         
         // Invoke load settings and pets from heroku server
         getSettings()
@@ -59,6 +62,8 @@ class PetListController: UIViewController, UITableViewDataSource, UITableViewDel
             
             buttonChat.isEnabled = true
             buttonCall.isEnabled = true
+            
+            dateValidator = DateValidator(dateString: settings!.workHours)
         } else {
             textOfficialHours.text = "Please wait..."
             buttonChat.isEnabled = false
@@ -101,7 +106,19 @@ class PetListController: UIViewController, UITableViewDataSource, UITableViewDel
             self.indicator.isHidden = true
         }
     }
+    
+    // MARK: - Actions
+    
+    @IBAction func handleChat(_ sender: Any) {
+        if dateValidator != nil {
+            let message = dateValidator!.isInRange()
+                ? "Thank you for getting in touch with us. We’ll get back to you as soon as possible"
+                : "Work hours has ended. Please contact us again on the next work day"
 
+            self.alert(message: message)
+        }
+    }
+    
     // MARK: - Table View delegates
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pets.count

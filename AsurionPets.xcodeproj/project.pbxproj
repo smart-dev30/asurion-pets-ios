@@ -29,6 +29,8 @@
 		66199A50252B67EA0028585D /* URLSession+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66199A4F252B67EA0028585D /* URLSession+cURL.swift */; };
 		6637219C252B90C1000E18BC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6637219B252B90C1000E18BC /* API.swift */; };
 		663721A1252BAA62000E18BC /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663721A0252BAA62000E18BC /* PetDetailViewController.swift */; };
+		663721A4252BBA06000E18BC /* DateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663721A3252BBA06000E18BC /* DateValidator.swift */; };
+		663721A6252BC209000E18BC /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663721A5252BC209000E18BC /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		66199A4F252B67EA0028585D /* URLSession+cURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+cURL.swift"; sourceTree = "<group>"; };
 		6637219B252B90C1000E18BC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		663721A0252BAA62000E18BC /* PetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
+		663721A3252BBA06000E18BC /* DateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValidator.swift; sourceTree = "<group>"; };
+		663721A5252BC209000E18BC /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 		661999F9252B42160028585D /* AsurionPets */ = {
 			isa = PBXGroup;
 			children = (
+				663721A2252BB9F5000E18BC /* Utils */,
 				66199A41252B646C0028585D /* Services */,
 				66199A2C252B51D00028585D /* Application */,
 				66199A31252B59490028585D /* Models */,
@@ -223,6 +228,7 @@
 			children = (
 				66199A3C252B5AE40028585D /* View.swift */,
 				66199A3D252B5AE40028585D /* UIImageView.swift */,
+				663721A5252BC209000E18BC /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,6 +262,14 @@
 				663721A0252BAA62000E18BC /* PetDetailViewController.swift */,
 			);
 			path = PetDetailView;
+			sourceTree = "<group>";
+		};
+		663721A2252BB9F5000E18BC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				663721A3252BBA06000E18BC /* DateValidator.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,6 +406,7 @@
 				66199A50252B67EA0028585D /* URLSession+cURL.swift in Sources */,
 				66199A3F252B5AE40028585D /* UIImageView.swift in Sources */,
 				66199A35252B59490028585D /* Pet.swift in Sources */,
+				663721A6252BC209000E18BC /* UIViewController.swift in Sources */,
 				66199A3A252B5A480028585D /* PetTableViewCell.swift in Sources */,
 				66199A4E252B677B0028585D /* URLSession+Result.swift in Sources */,
 				661999FF252B42160028585D /* PetsListController.swift in Sources */,
@@ -405,6 +420,7 @@
 				66199A48252B66B40028585D /* Endpoint.swift in Sources */,
 				6637219C252B90C1000E18BC /* API.swift in Sources */,
 				663721A1252BAA62000E18BC /* PetDetailViewController.swift in Sources */,
+				663721A4252BBA06000E18BC /* DateValidator.swift in Sources */,
 				66199A44252B66110028585D /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
