@@ -14,11 +14,15 @@ public final class DateValidator {
     
     func isInRange() -> Bool {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm"
+        dateFormatter.dateFormat = "yyyy-MM-dd"
 
-        let startDate = dateFormatter.date(from: startTime!)!
-        let endDate = dateFormatter.date(from: endTime!)!
-        
+        let today = dateFormatter.string(from: Date())
+
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+
+        let startDate = dateFormatter.date(from: "\(today) \(startTime!)")!
+        let endDate = dateFormatter.date(from: "\(today) \(endTime!)")!
+
         return (startDate ... endDate).contains(Date())
     }
     
